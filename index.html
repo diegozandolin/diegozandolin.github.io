@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Ciao a tutti</p>
+    <h3>Ciao a tutti</h3>
+    <input type="number" id="a" value="2">
+    <input type="number" id="b" value="3">
+    <button id="btn">Somma</button> 
+    <p id="risultato">risultato:</p>
+    <script>
+        const input_a = document.getElementById("a");
+        const input_b = document.getElementById("b");
+        const risultato = document.getElementById("risultato");
+
+       const btn = document.getElementById("btn").addEventListener("click",()=>{
+            
+            let a = parseFloat(input_a.value);
+            let b = parseFloat(input_b.value);
+
+            risultato.innerText = a + b;
+
+        });
+
+        
+        </script>
 </body>
+
 </html>
